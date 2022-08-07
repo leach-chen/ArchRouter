@@ -12,6 +12,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/apt-arch" />
+            <option value="$PROJECT_DIR$/apt-arch/arch" />
+            <option value="$PROJECT_DIR$/apt-arch/arch-annotation" />
+            <option value="$PROJECT_DIR$/apt-arch/arch-compiler" />
+            <option value="$PROJECT_DIR$/demoA" />
+            <option value="$PROJECT_DIR$/demoB" />
+            <option value="$PROJECT_DIR$/plugin" />
+            <option value="$PROJECT_DIR$/provider" />
           </set>
         </option>
       </GradleProjectSettings>

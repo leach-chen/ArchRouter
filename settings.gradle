@@ -14,3 +14,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ArchRouter"
 include ':app'
+include ':plugin'
+include ':demoA'
+include ':demoB'
+include ':provider'
+include ':apt-arch:arch'
+include ':apt-arch:arch-annotation'
+include ':apt-arch:arch-compiler'
