@@ -1,7 +1,11 @@
-plugins {
+/*plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-}
+}*/
+
+apply plugin:'com.archrouter.plugintest'
+apply plugin:'org.jetbrains.kotlin.android'
+
 
 android {
     compileSdk 32
