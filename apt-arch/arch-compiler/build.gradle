@@ -10,7 +10,7 @@ dependencies {
     implementation("com.google.auto.service:auto-service:1.0-rc7")
     implementation 'com.squareup:javapoet:1.13.0'
     //compileOnly files(Jvm.current().getToolsJar())
-    //implementation project(':apt-arch:arch-annotation')
+    implementation project(':apt-arch:arch-annotation')
 }
 
 sourceCompatibility = "1.8"

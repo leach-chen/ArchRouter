@@ -32,6 +32,7 @@ public abstract class BaseProcessor extends AbstractProcessor {
     protected Filer filer;
     protected Types types;
     protected Elements elements;
+    protected ProcessingEnvironment mProcEnv;
 
     @Override
     public synchronized void init(ProcessingEnvironment processingEnvironment) {
@@ -39,6 +40,7 @@ public abstract class BaseProcessor extends AbstractProcessor {
         filer = processingEnvironment.getFiler();
         types = processingEnvironment.getTypeUtils();
         elements = processingEnvironment.getElementUtils();
+        mProcEnv = processingEnvironment;
     }
 
     /**
