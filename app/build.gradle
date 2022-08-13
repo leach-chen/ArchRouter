@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    //id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -39,7 +41,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation project(path: ':provider')
-    annotationProcessor project(path: ':apt-arch:arch-compiler')
+    kapt project(path: ':apt-arch:arch-compiler')
     /*implementation project(path: ':apt-arch:arch-annotation')
     annotationProcessor project(path: ':apt-arch:arch-compiler')*/
 

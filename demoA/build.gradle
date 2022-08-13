@@ -5,6 +5,7 @@
 
 apply plugin:'com.archrouter.plugintest'
 apply plugin:'org.jetbrains.kotlin.android'
+apply plugin:'kotlin-kapt'
 
 android {
     compileSdk 32
@@ -40,7 +41,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation project(path: ':provider')
-    annotationProcessor project(path: ':apt-arch:arch-compiler')
+    kapt project(path: ':apt-arch:arch-compiler')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
