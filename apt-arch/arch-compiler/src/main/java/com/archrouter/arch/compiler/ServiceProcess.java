@@ -3,6 +3,7 @@ package com.archrouter.arch.compiler;
 
 import com.archrouter.arch.annotation.RouterService;
 import com.google.auto.service.AutoService;
+import com.sun.tools.javac.code.Symbol;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -13,6 +14,7 @@ import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
+import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic;
 
@@ -24,8 +26,19 @@ public class ServiceProcess extends BaseProcessor{
 
         //System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1111111111111111111111111111111");
         //mProcEnv.getMessager().printMessage(Diagnostic.Kind.NOTE,"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-
-        return false;
+        Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(RouterService.class);
+        if(elements.isEmpty())return true;
+        for(Element element : elements) {
+            if (!(element instanceof Symbol.ClassSymbol)) {
+                continue;
+            }
+            TypeElement typeElement = (TypeElement) element;
+            RouterService routerService = typeElement.getAnnotation(RouterService.class);
+            if(routerService == null){
+                continue;
+            }
+        }
+        return true;
     }
 
     @Override
