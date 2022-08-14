@@ -22,11 +22,12 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.Modifier;
 import javax.lang.model.element.Name;
 import javax.lang.model.element.TypeElement;
+import javax.lang.model.element.VariableElement;
 import javax.tools.JavaFileObject;
 
 @AutoService(Processor.class)
 //@SupportedSourceVersion(SourceVersion.RELEASE_8)
-public class PrintProcess extends AbstractProcessor {
+public class TestProcess extends AbstractProcessor {
     protected ProcessingEnvironment mProcEnv;
     private Filer mFiler; //文件相关工具类：用于保存生成的java类文件
 
@@ -44,6 +45,7 @@ public class PrintProcess extends AbstractProcessor {
         if (elements.isEmpty()) {
             return true;
         }
+
         try {
             System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             JavaFileObject fileObject = mProcEnv.getFiler().createSourceFile("com.archrouter.app.PrintUtil");
@@ -53,6 +55,15 @@ public class PrintProcess extends AbstractProcessor {
             writer.write("public class PrintUtil {\n");
 
             for(Element element : elements) {
+                VariableElement variableElement = (VariableElement) element;
+                String activityName = variableElement.getEnclosingElement().getSimpleName().toString();
+                Class aClass = variableElement.getEnclosingElement().getClass();
+
+                TypeElement enclosingElement = (TypeElement) element.getEnclosingElement();
+                String packageName = mProcEnv.getElementUtils().getPackageOf(enclosingElement).toString();
+
+                System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:"+activityName+" "+" "+packageName);
+
                 //获取到成员变量名
                 Name simpleName = element.getSimpleName();
                 writer.write("      //输出" + simpleName+"\n");
@@ -62,7 +73,7 @@ public class PrintProcess extends AbstractProcessor {
             writer.write("}");
             writer.flush();
             writer.close();
-            System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+            System.out.println("cccccccccccccccccccccccccccccccc");
 
             //创建类
             /*TypeSpec bindProxyClass = TypeSpec.classBuilder("PrintUtil")
