@@ -41,6 +41,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     implementation project(path: ':provider')
+    implementation project(path: ':demoA')
+    implementation project(path: ':demoB')
     kapt project(path: ':apt-arch:arch-compiler')
     /*implementation project(path: ':apt-arch:arch-annotation')
     annotationProcessor project(path: ':apt-arch:arch-compiler')*/
