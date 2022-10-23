@@ -1,5 +1,6 @@
 package com.archrouter.arch.compiler;
 
+import com.archrouter.arch.other.Const;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.CodeBlock;
 import com.squareup.javapoet.JavaFile;
@@ -182,7 +183,7 @@ public abstract class BaseProcessor extends AbstractProcessor {
     /**
      * 生成类似下面格式的HandlerInitClass，同时生成ServiceInitClass
      * <pre>
-     * package com.sankuai.waimai.router.generated;
+     * package com.archrouter.router.generated;
      * public class UriRouter_RouterUri_xxx implements IUriAnnotationInit {
      *     public void init(UriAnnotationHandler handler) {
      *         handler.register("", "", "/login", "com.xxx.LoginActivity", false);
@@ -193,8 +194,8 @@ public abstract class BaseProcessor extends AbstractProcessor {
      *
      * @param code             方法中的代码
      * @param genClassName     生成class的SimpleClassName，形如 UriRouter_RouterUri_xxx
-     * @param handlerClassName Handler类名，例如 com.sankuai.waimai.router.common.UriAnnotationHandler
-     * @param interfaceName    接口名，例如 com.sankuai.waimai.router.common.IUriAnnotationInit
+     * @param handlerClassName Handler类名，例如 com.archrouter.router.common.UriAnnotationHandler
+     * @param interfaceName    接口名，例如 com.archrouter.router.common.IUriAnnotationInit
      */
     public void buildHandlerInitClass(CodeBlock code, String genClassName, String handlerClassName, String interfaceName) {
         MethodSpec methodSpec = MethodSpec.methodBuilder(Const.INIT_METHOD)
@@ -227,9 +228,9 @@ public abstract class BaseProcessor extends AbstractProcessor {
     /**
      * 辅助工具类，用于生成ServiceInitClass，格式如下：
      * <pre>
-     * package com.sankuai.waimai.router.generated.service;
+     * package com.archrouter.router.generated.service;
      *
-     * import com.sankuai.waimai.router.service.ServiceLoader;
+     * import com.archrouter.router.service.ServiceLoader;
      *
      * public class &lt;ClassName&gt; {
      *     public static void init() {

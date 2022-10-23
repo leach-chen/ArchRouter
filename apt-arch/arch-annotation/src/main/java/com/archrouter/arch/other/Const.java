@@ -1,10 +1,10 @@
-package com.archrouter.arch.compiler;
+package com.archrouter.arch.other;
 
 public class Const {
 
-    public static final String NAME = "WMRouter";
+    public static final String NAME = "Router";
 
-    public static final String PKG = "com.sankuai.waimai.router.";
+    public static final String PKG = "com.archrouter.router.";
 
     // 生成的代码
     public static final String GEN_PKG = PKG + "generated";
@@ -52,5 +52,4 @@ public class Const {
 
     public static final String FRAGMENT_ANDROID_X_CLASS = "androidx.fragment.app.Fragment";
     public static final String FRAGMENT_V4_CLASS = "android.support.v4.app.Fragment";
-
 }
