@@ -5,6 +5,8 @@ plugins {
     id 'kotlin-kapt'
 }
 
+apply plugin:'com.archrouter.plugintest'
+
 android {
     compileSdk 32
 

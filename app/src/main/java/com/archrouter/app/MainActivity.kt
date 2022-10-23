@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         PrintUtil.`print$$age`()
 
-        Router.getService(ITestApp::class.java,"111")
+        Router.getService(ITestApp::class.java,"111").printLog()
     }
 }

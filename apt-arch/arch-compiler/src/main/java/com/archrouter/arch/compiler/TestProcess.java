@@ -47,7 +47,7 @@ public class TestProcess extends AbstractProcessor {
         }
 
         try {
-            System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            //System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             JavaFileObject fileObject = mProcEnv.getFiler().createSourceFile("com.archrouter.app.PrintUtil");
             Writer writer = fileObject.openWriter();
             writer.write("package com.archrouter.app;\n");
@@ -62,7 +62,7 @@ public class TestProcess extends AbstractProcessor {
                 TypeElement enclosingElement = (TypeElement) element.getEnclosingElement();
                 String packageName = mProcEnv.getElementUtils().getPackageOf(enclosingElement).toString();
 
-                System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:"+activityName+" "+" "+packageName);
+                //System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb:"+activityName+" "+" "+packageName);
 
                 //获取到成员变量名
                 Name simpleName = element.getSimpleName();
@@ -73,7 +73,7 @@ public class TestProcess extends AbstractProcessor {
             writer.write("}");
             writer.flush();
             writer.close();
-            System.out.println("cccccccccccccccccccccccccccccccc");
+            //System.out.println("cccccccccccccccccccccccccccccccc");
 
             //创建类
             /*TypeSpec bindProxyClass = TypeSpec.classBuilder("PrintUtil")
