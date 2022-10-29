@@ -28,7 +28,7 @@ import javax.tools.Diagnostic;
 
 @AutoService(Processor.class)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-public class ServiceProcess extends BaseProcessor {
+public class RouterServiceProcessor extends BaseProcessor {
 
     private final HashMap<String, Entity> mEntityMap = new HashMap<>();
     private String mHash = null;

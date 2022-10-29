@@ -1,9 +1,9 @@
 package com.archrouter.app
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.archrouter.arch.annotation.Print
-import com.archrouter.arch.annotation.RouterService
 import com.archrouter.router.Router
 
 class MainActivity : AppCompatActivity() {
@@ -18,8 +18,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        PrintUtil.`print$$age`()
+        //PrintUtil.`print$$age`()
 
-        Router.getService(ITestApp::class.java,"111").printLog()
+        Router.getService(ITestApp::class.java, "111").printLog()
+    }
+
+
+    fun goTestActivity(view:View){
+        Router.startUri(this, "/TestActivity")
     }
 }

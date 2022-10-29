@@ -164,7 +164,7 @@ public class RouterTransform extends Transform {
     /**
      * 生成格式如下的代码，其中ServiceInit_xxx由注解生成器生成。
      * <pre>
-     * package com.sankuai.waimai.router.generated;
+     * package com.archrouter.router.generated;
      *
      * public class ServiceLoaderInit {
      *

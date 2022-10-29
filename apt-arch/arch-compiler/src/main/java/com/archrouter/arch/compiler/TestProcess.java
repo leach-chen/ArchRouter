@@ -39,7 +39,7 @@ public class TestProcess extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> set, RoundEnvironment roundEnvironment) {
-
+        System.out.println("nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn");
         //获取到所有添加@Print注解的成员变量
         Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(Print.class);
         if (elements.isEmpty()) {
