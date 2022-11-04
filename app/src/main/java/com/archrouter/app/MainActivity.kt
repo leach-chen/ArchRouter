@@ -46,19 +46,16 @@ class MainActivity : AppCompatActivity() {
 
     fun goFun4(view: View) {
         //Router.startUri(this, ConstantsUri.PATH_DEMOB)
-        DefaultUriRequest(this, ConstantsUri.PATH_DEMOB) //传入context和目标uri
-            // startActivityForResult使用的RequestCode
-            .activityRequestCode(100) // 设置跳转来源，默认为内部跳转，还可以是来自WebView、来自Push通知等。
-            // 目标Activity可通过UriSourceTools区分跳转来源。
-            .from(UriSourceTools.FROM_INTERNAL) // Intent加参数
+        DefaultUriRequest(this, ConstantsUri.PATH_DEMOB)
+            .activityRequestCode(100)
+            .from(UriSourceTools.FROM_INTERNAL)
             .putExtra("testValue", "来自主工程的数据")
             .onComplete(object : OnCompleteListener {
                 override fun onSuccess(request: UriRequest) {
-                    //ToastUtils.showToast(request.context, "跳转成功")
                 }
 
                 override fun onError(request: UriRequest, resultCode: Int) {}
-            }) // 这里的start实际也是调用了Router.startUri方法
+            }) 
             .start()
     }
 
