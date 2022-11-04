@@ -35,7 +35,7 @@ public class RouterUriProcessor extends BaseProcessor {
             }
             boolean isActivity = isActivity(element);
             boolean isHandler = isHandler(element);
-            if (!isActivity && isHandler) {
+            if (!isActivity && !isHandler) {
                 continue;
             }
 

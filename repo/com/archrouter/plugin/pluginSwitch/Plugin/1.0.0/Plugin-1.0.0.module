@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.archrouter.plugin.pluginSwitch",
+    "module": "Plugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "Plugin-1.0.0.jar",
+          "url": "Plugin-1.0.0.jar",
+          "size": 20497,
+          "sha512": "60f5146dff84d209fe92fccc2d5a9c3e9827e6fea6f99b4dbb40e226815912f7a6f5d90d2a1918303a5eefe263700f9f349d7c8b7a11a75068df061fd94738e3",
+          "sha256": "b19da0e1dc9c78b73c5defae68567d2933e679dd224582cbb4de0694d4904a76",
+          "sha1": "1db958a77434fb5fc9069b95dd30cc267eba4ed8",
+          "md5": "54bcf3a1a53b23abc7cdb072c62156d5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.6"
+          }
+        },
+        {
+          "group": "org.javassist",
+          "module": "javassist",
+          "version": {
+            "requires": "3.27.0-GA"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.6.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "Plugin-1.0.0.jar",
+          "url": "Plugin-1.0.0.jar",
+          "size": 20497,
+          "sha512": "60f5146dff84d209fe92fccc2d5a9c3e9827e6fea6f99b4dbb40e226815912f7a6f5d90d2a1918303a5eefe263700f9f349d7c8b7a11a75068df061fd94738e3",
+          "sha256": "b19da0e1dc9c78b73c5defae68567d2933e679dd224582cbb4de0694d4904a76",
+          "sha1": "1db958a77434fb5fc9069b95dd30cc267eba4ed8",
+          "md5": "54bcf3a1a53b23abc7cdb072c62156d5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+apply plugin: 'groovy'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+
+    compileOnly "com.android.tools.build:gradle:4.2.1"
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.javassist:javassist:3.27.0-GA'
+}
+
+
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenCentral()
+}
+
+publishing {
+    repositories {
+        maven {
+            url = "$rootDir/repo"
+        }
+    }
+
+    publications {
+        publish(MavenPublication) {
+            groupId = 'com.archrouter.plugin.pluginRouter'
+            artifactId = 'Plugin'
+            version = '1.0.0'
+            from components.java
+        }
+    }
+}

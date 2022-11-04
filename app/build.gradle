@@ -1,11 +1,13 @@
 plugins {
-    id 'com.android.application'
+    //id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     //id 'kotlin-android'
     id 'kotlin-kapt'
 }
 
-apply plugin:'com.archrouter.plugintest'
+apply plugin:'com.archrouter.plugin.pluginswitch'
+apply plugin:'com.archrouter.plugin.pluginrouter'
+
 
 android {
     compileSdk 32
