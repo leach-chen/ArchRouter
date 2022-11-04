@@ -14,7 +14,6 @@ import com.archrouter.router.core.UriRequest;
  * 在 {@link UriRequest} 中设置的 {@link #FIELD_FROM} ，会被带到Intent的参数
  * {@link #INTENT_KEY_URI_FROM} 中，Activity也可以根据此参数做特殊逻辑处理。
  *
- * Created by jzj on 2018/1/29.
  */
 public class UriSourceTools {
 

@@ -17,7 +17,6 @@ import com.archrouter.router.utils.RouterUtils;
  * {@link PageAnnotationHandler} 处理且只处理所有格式为 wm_router://page/* 的URI，根据path匹配，
  * 匹配不到的分发给 {@link NotFoundHandler} ，返回 {@link UriResult#CODE_NOT_FOUND}
  *
- * Created by jzj on 2018/3/23.
  */
 
 public class PageAnnotationHandler extends PathHandler {

@@ -13,7 +13,6 @@ import java.util.Map;
 
 /**
  * 给uri添加参数。{@link UriRequest} 可设置 {@link UriParamInterceptor#FIELD_URI_APPEND_PARAMS}, 会被自动添加到uri中。
- * Created by jzj on 2018/1/29.
  */
 public class UriParamInterceptor implements UriInterceptor {
 

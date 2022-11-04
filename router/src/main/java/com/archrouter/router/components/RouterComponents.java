@@ -12,7 +12,6 @@ import com.archrouter.router.service.IFactory;
 /**
  * 用于配置组件
  *
- * Created by jzj on 2018/4/28.
  */
 public class RouterComponents {
 

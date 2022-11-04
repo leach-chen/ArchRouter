@@ -19,7 +19,6 @@ import java.util.Map;
 /**
  * 根据path分发URI给子节点，支持注册的子节点包括ActivityClassName, ActivityClass, UriHandler
  *
- * Created by jzj on 2018/3/26.
  */
 public class PathHandler extends UriHandler {
 

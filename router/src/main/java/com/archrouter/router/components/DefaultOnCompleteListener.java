@@ -12,7 +12,6 @@ import com.archrouter.router.core.UriRequest;
 /**
  * 默认的全局 {@link OnCompleteListener} ，在跳转失败时弹Toast提示
  *
- * Created by jzj on 2018/3/26.
  */
 public class DefaultOnCompleteListener implements OnCompleteListener {
 

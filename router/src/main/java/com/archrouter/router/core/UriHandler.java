@@ -6,7 +6,6 @@ import androidx.annotation.NonNull;
  * 处理某一类或某个URI。支持添加若干个 {@link UriInterceptor} 。
  * 子类主要覆写 {@link #shouldHandle(UriRequest)} 和 {@link #handleInternal(UriRequest, UriCallback)} 方法。
  *
- * Created by jzj on 17/2/27.
  */
 public abstract class UriHandler {
 

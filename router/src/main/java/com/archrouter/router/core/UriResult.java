@@ -4,7 +4,6 @@ package com.archrouter.router.core;
  * 跳转完成后的ResultCode。也可以自定义ResultCode，
  * 为了避免冲突，建议自定义ResultCode使用负数值。
  * <p>
- * Created by jzj on 2018/3/26.
  */
 
 public interface UriResult {

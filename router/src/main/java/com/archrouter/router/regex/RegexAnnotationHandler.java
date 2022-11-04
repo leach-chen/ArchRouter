@@ -20,7 +20,6 @@ import java.util.regex.PatternSyntaxException;
  * {@link RegexAnnotationHandler} 根据优先级从大到小，逐个匹配每个 {@link RouterRegex} 注解配置的节点，
  * 优先级相同的节点不保证先后顺序。
  *
- * Created by jzj on 2018/3/19.
  */
 
 public class RegexAnnotationHandler extends ChainedHandler {

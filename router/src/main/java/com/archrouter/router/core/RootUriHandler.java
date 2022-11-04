@@ -11,7 +11,6 @@ import com.archrouter.router.utils.LazyInitHelper;
 /**
  * 最顶层的 {@link UriHandler}
  *
- * Created by jzj on 2017/4/17.
  */
 public class RootUriHandler extends ChainedHandler {
 

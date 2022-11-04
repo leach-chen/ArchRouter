@@ -2,7 +2,6 @@ package com.archrouter.router.core;
 
 /**
  * 异步事件处理完成的回调
- * Created by jzj on 2017/4/11.
  */
 public interface UriCallback extends UriResult {
 

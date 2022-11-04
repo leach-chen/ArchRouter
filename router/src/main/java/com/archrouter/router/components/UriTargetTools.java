@@ -12,8 +12,6 @@ import java.lang.reflect.Modifier;
 
 /**
  * 跳转目标，支持ActivityClass, ActivityClassName, UriHandler。
- *
- * Created by jzj on 2018/3/26.
  */
 
 public class UriTargetTools {

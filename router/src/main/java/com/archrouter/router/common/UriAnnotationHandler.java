@@ -23,7 +23,6 @@ import java.util.Map;
  * 接收到 {@link UriRequest} 时， {@link UriAnnotationHandler} 根据scheme+host产生的key，
  * 分发给对应的 {@link PathHandler}，{@link PathHandler} 再根据path分发给每个子节点。
  *
- * Created by jzj on 2018/3/23.
  */
 public class UriAnnotationHandler extends UriHandler {
 

@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 支持添加多个子 {@link UriInterceptor} ，按先后顺序依次异步执行
- * Created by jzj on 2017/4/11.
  */
 public class ChainedInterceptor implements UriInterceptor {
 

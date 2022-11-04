@@ -14,7 +14,6 @@ import java.util.function.Consumer;
 /**
  * 按优先级从大到小排列。优先级相同时，后加入的放后面。
  *
- * Created by jzj on 2018/4/27.
  */
 
 public class PriorityList<T> extends AbstractList<T> {
