@@ -7,11 +7,12 @@
     android:gravity="center"
     tools:context=".contents.view.DemoBActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="demoB"
+        android:text="Finish"
         android:textColor="#000000"
-        ></TextView>
+        android:onClick="goFun1"
+        ></Button>
 
 </LinearLayout>
