@@ -1,9 +1,9 @@
 plugins {
-    id 'com.android.library'
+    //id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
-//apply plugin:'com.archrouter.plugintest'
+apply plugin:'com.archrouter.plugin.pluginswitch'
 apply plugin:'org.jetbrains.kotlin.android'
 apply plugin:'kotlin-kapt'
 
