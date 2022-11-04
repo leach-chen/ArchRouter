@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.archrouter.demob.R
 
-class MainActivity : AppCompatActivity() {
+class DemoBActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_demob)
     }
 }

@@ -4,20 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".contents.view.DemoBActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="主模块调用demoA模块方法"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="goFun1"
-        />
+        android:text="demoB"
+        android:textColor="#000000"
+        ></TextView>
 
 </LinearLayout>
