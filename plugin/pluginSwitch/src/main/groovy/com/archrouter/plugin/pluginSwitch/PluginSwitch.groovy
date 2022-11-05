@@ -13,7 +13,7 @@ class PluginSwitch implements Plugin<Project>{
         String taskNames = project.gradle.startParameter.taskNames.toString()
         System.out.println("当前运行的Task：" + taskNames)
         String module = project.path.replace(":", "")
-        System.out.println("当前的module" + module)
+        System.out.println("当前的module：" + module)
         AssembleTask assembleTask = getTaskInfo(project.gradle.startParameter.taskNames)
 
         if (assembleTask.isAssemble) {
