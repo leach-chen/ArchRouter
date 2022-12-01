@@ -9,11 +9,11 @@ plugins {
 version = Dep.RouterVer.routerVer
 
 android {
-    compileSdk = 32
+    compileSdk = Dep.compileSdk
 
     defaultConfig {
-        minSdk = 18
-        targetSdk = 32
+        minSdk = Dep.minSdk
+        targetSdk = Dep.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         //consumerProguardFiles "consumer-rules.pro"
