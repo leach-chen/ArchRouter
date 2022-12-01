@@ -7,9 +7,9 @@
   <!-- that they should prefer consuming it instead. -->
   <!-- do_not_remove: published-with-gradle-metadata -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.archrouter.plugin.pluginSwitch</groupId>
-  <artifactId>Plugin</artifactId>
-  <version>1.0.0</version>
+  <groupId>ArchRouter.plugin</groupId>
+  <artifactId>pluginSwitch</artifactId>
+  <version>unspecified</version>
   <dependencies>
     <dependency>
       <groupId>commons-io</groupId>

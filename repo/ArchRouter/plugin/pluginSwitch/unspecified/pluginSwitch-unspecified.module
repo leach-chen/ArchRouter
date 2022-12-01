@@ -25,8 +25,8 @@
       },
       "files": [
         {
-          "name": "Plugin-1.0.0.jar",
-          "url": "Plugin-1.0.0.jar",
+          "name": "pluginSwitch-unspecified.jar",
+          "url": "pluginSwitch-unspecified.jar",
           "size": 20498,
           "sha512": "0f58cafa31a942ecd02570df1cd52444618ba827ae423e8ff792512cb9180d0daf4e7452af6402500efa248c1300923e7c6358292fd58150d9987254e70bc4fe",
           "sha256": "247aa1c947884c6bd884b092a1c1359d329d16f3a487917da0122c2fd51c0efd",
@@ -62,8 +62,8 @@
       ],
       "files": [
         {
-          "name": "Plugin-1.0.0.jar",
-          "url": "Plugin-1.0.0.jar",
+          "name": "pluginSwitch-unspecified.jar",
+          "url": "pluginSwitch-unspecified.jar",
           "size": 20498,
           "sha512": "0f58cafa31a942ecd02570df1cd52444618ba827ae423e8ff792512cb9180d0daf4e7452af6402500efa248c1300923e7c6358292fd58150d9987254e70bc4fe",
           "sha256": "247aa1c947884c6bd884b092a1c1359d329d16f3a487917da0122c2fd51c0efd",

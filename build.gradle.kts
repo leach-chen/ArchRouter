@@ -8,7 +8,7 @@ buildscript {
         google()
         maven {
             //本地maven仓库地址
-            setUrl("$rootDir/repo")
+            url = uri("$rootDir/repo")
         }
         mavenCentral()
         mavenLocal()
@@ -42,7 +42,7 @@ allprojects {
         mavenCentral()
         maven {
             //本地maven仓库地址
-            setUrl("$rootDir/repo")
+            url = uri("$rootDir/repo")
         }
 //        jcenter() // Warning: this repository is going to shut down soon
     }

@@ -1,3 +1,4 @@
+import com.archrouter.plugin.pluginLocal.Dep
 plugins {
     id("com.archrouter.plugin.pluginswitch")
     id("com.archrouter.plugin.pluginrouter")
@@ -8,12 +9,12 @@ plugins {
 
 
 android {
-    compileSdk = 32
+    compileSdk = Dep.compileSdk
 
     defaultConfig {
         applicationId = "com.archrouter.app"
-        minSdk = 18
-        targetSdk = 32
+        minSdk = Dep.minSdk
+        targetSdk = Dep.targetSdk
         versionCode = 1
         versionName = "1.0"
 
