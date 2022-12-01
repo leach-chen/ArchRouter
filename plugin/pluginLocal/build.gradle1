@@ -1,0 +1,25 @@
+apply plugin: 'groovy'
+apply plugin: 'java-gradle-plugin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation gradleApi()
+    implementation localGroovy()
+    compileOnly "com.android.tools.build:gradle:4.2.1"
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.javassist:javassist:3.27.0-GA'
+}
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+gradlePlugin {
+    plugins {
+        create("router-publish"){
+            id = "router-publish"
+            implementationClass = "com.archrouter.plugin.pluginLocal.TestPlugin"
+        }
+    }
+}

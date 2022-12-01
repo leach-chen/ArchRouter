@@ -1,4 +1,4 @@
-package com.archrouter.plugin.pluginSwitch
+package com.archrouter.plugin.pluginLocal
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
