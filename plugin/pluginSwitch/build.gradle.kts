@@ -1,8 +1,10 @@
-
+import com.archrouter.plugin.pluginLocal.Dep
 plugins {
     id("groovy")
     `java-gradle-plugin`
     `maven-publish`
+    signing
+    id("router-publish")
 }
 
 dependencies {
@@ -14,11 +16,14 @@ dependencies {
     implementation("org.javassist:javassist:3.27.0-GA")
 }
 
+version = Dep.RouterVer.pluginSwitchVer
 
 repositories {
     mavenCentral()
 }
 
+/*
+//本地调试使用
 publishing {
     repositories {
         maven {
@@ -28,10 +33,10 @@ publishing {
 
     publications {
         create<MavenPublication>("release") {
-            groupId = "com.archrouter.plugin.pluginSwitch"
-            artifactId = "Plugin"
+            groupId = "com.archrouter"
+            artifactId = "pluginSwitch"
             version = "1.0.0"
             from(components["java"])
         }
     }
-}
+}*/

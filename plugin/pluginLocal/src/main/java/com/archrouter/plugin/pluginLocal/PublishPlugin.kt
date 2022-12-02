@@ -37,7 +37,7 @@ class PublishPlugin : Plugin<Project> {
 
         project.afterEvaluate {
             val properties = Properties()
-            val file = File(project.rootProject.file("gradle"), "upload.properties")
+            val file = File(project.rootProject.file("/"), "upload.properties")
             if (file.exists()) {
                 properties.load(file.inputStream())
                 var isPublish = properties.getProperty("isPublish")

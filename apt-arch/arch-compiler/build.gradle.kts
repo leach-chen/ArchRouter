@@ -3,6 +3,8 @@ import com.archrouter.plugin.pluginLocal.Dep
 
 plugins {
     id("java")
+    `maven-publish`
+    signing
     id("router-publish")
 }
 

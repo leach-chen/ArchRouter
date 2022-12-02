@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.archrouter",
+    "module": "pluginRouter",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "pluginRouter-1.0.0.jar",
+          "url": "pluginRouter-1.0.0.jar",
+          "size": 47896,
+          "sha512": "e827b877e8e76db593a5086a8b3ac8887432bf2251c64e09b1b55db2b0add7020393606d0da2f9a2188b2534a910f6b51b4605a42dc1dac8ffdf843571be17a8",
+          "sha256": "44efe7b4444eaa9babe8c4049212d572471fde7dfac6de7b043e5f221abfb953",
+          "sha1": "96919195a8b1a5d221880d94f6fbb291feed3d71",
+          "md5": "5d86dc4ce20d14614eb70082e9772e8f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.6"
+          }
+        },
+        {
+          "group": "org.javassist",
+          "module": "javassist",
+          "version": {
+            "requires": "3.27.0-GA"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pluginRouter-1.0.0.jar",
+          "url": "pluginRouter-1.0.0.jar",
+          "size": 47896,
+          "sha512": "e827b877e8e76db593a5086a8b3ac8887432bf2251c64e09b1b55db2b0add7020393606d0da2f9a2188b2534a910f6b51b4605a42dc1dac8ffdf843571be17a8",
+          "sha256": "44efe7b4444eaa9babe8c4049212d572471fde7dfac6de7b043e5f221abfb953",
+          "sha1": "96919195a8b1a5d221880d94f6fbb291feed3d71",
+          "md5": "5d86dc4ce20d14614eb70082e9772e8f"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import com.archrouter.plugin.pluginLocal.Dep
 plugins {
+    //id("com.android.application")
     id("com.archrouter.plugin.pluginswitch")
     id("com.archrouter.plugin.pluginrouter")
     kotlin("android")

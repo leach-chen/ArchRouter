@@ -26,6 +26,10 @@ then
     $buildCmd
     buildCmd="./gradlew :router:clean :router:build router:publish"
     $buildCmd
+    buildCmd="./gradlew :plugin:pluginSwitch:clean :plugin:pluginSwitch:build :plugin:pluginSwitch:publish"
+    $buildCmd
+    buildCmd="./gradlew :plugin:pluginRouter:clean :plugin:pluginRouter:build :plugin:pluginRouter:publish"
+    $buildCmd
     echo "上传完成!"
 fi
 sleep 10000

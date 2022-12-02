@@ -1,3 +1,4 @@
+import com.archrouter.plugin.pluginLocal.Dep
 buildscript {
     repositories {
         maven { setUrl("https://maven.aliyun.com/repository/public/") }
@@ -16,12 +17,14 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:7.1.3")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
-        classpath("com.archrouter.plugin.pluginRouter:Plugin:1.0.0")
-        classpath("com.archrouter.plugin.pluginSwitch:Plugin:1.0.0")
+        classpath("com.archrouter:pluginRouter:1.0.0")
+        classpath("com.archrouter:pluginSwitch:1.0.0")
     }
 }
 
-
+subprojects {
+    group = Dep.RouterGroup.group
+}
 
 plugins {
     id("router-publish") apply(false)

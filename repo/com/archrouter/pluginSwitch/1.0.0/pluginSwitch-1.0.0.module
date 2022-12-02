@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.archrouter",
+    "module": "pluginSwitch",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "pluginSwitch-1.0.0.jar",
+          "url": "pluginSwitch-1.0.0.jar",
+          "size": 20498,
+          "sha512": "04a02f688e3b0d4a24e4253b657fee1e2d0d7b10ee3c90d9098ee41573e19fe64d73044ebf4c96296682168c0afda0eedca12eb9e890767c70304e2f82497291",
+          "sha256": "a2bd8eafc5a7acf73845e29db24a005ce5ca6cd2d80f3a93dd2ec7a558846b6b",
+          "sha1": "8328c8721cdc80a85e7eed264ae9f2c387aafe3d",
+          "md5": "1a55c050556ac163ae1c4ae0abe07080"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.6"
+          }
+        },
+        {
+          "group": "org.javassist",
+          "module": "javassist",
+          "version": {
+            "requires": "3.27.0-GA"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pluginSwitch-1.0.0.jar",
+          "url": "pluginSwitch-1.0.0.jar",
+          "size": 20498,
+          "sha512": "04a02f688e3b0d4a24e4253b657fee1e2d0d7b10ee3c90d9098ee41573e19fe64d73044ebf4c96296682168c0afda0eedca12eb9e890767c70304e2f82497291",
+          "sha256": "a2bd8eafc5a7acf73845e29db24a005ce5ca6cd2d80f3a93dd2ec7a558846b6b",
+          "sha1": "8328c8721cdc80a85e7eed264ae9f2c387aafe3d",
+          "md5": "1a55c050556ac163ae1c4ae0abe07080"
+        }
+      ]
+    }
+  ]
+}

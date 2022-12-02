@@ -1,8 +1,11 @@
-
+import com.archrouter.plugin.pluginLocal.Dep
 plugins {
     id("groovy")
+    `kotlin-dsl`
     `java-gradle-plugin`
     `maven-publish`
+    signing
+    id("router-publish")
 }
 
 dependencies {
@@ -14,11 +17,14 @@ dependencies {
     implementation("org.javassist:javassist:3.27.0-GA")
 }
 
+version = Dep.RouterVer.pluginRouterVer
 
 repositories {
     mavenCentral()
 }
 
+/*
+//本地调试使用
 publishing {
     repositories {
         maven {
@@ -29,9 +35,9 @@ publishing {
     publications {
         create<MavenPublication>("release") {
             from(components["java"])
-            groupId = "com.archrouter.plugin.pluginRouter"
-            artifactId = "Plugin"
+            groupId = "com.archrouter"
+            artifactId = "pluginRouter"
             version = "1.0.0"
         }
     }
-}
+}*/

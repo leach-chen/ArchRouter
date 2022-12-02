@@ -12,7 +12,13 @@ object Dep {
 
 
     object RouterVer {
-        const val routerVer = "1.0.0.20221201"
-        const val archVer = "1.0.0.20221201"
+        const val routerVer = "1.0.0-SNAPSHOT"
+        const val archVer = "1.0.0-SNAPSHOT"
+        const val pluginSwitchVer = "1.0.0-SNAPSHOT"
+        const val pluginRouterVer = "1.0.0-SNAPSHOT"
+    }
+
+    object RouterGroup {
+        const val group = "com.archrouter"
     }
 }

@@ -1,7 +1,10 @@
 import com.archrouter.plugin.pluginLocal.Dep
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    //id("org.jetbrains.kotlin.android")
+    kotlin("android")
+    `maven-publish`
+    signing
     id("router-publish")
 }
 
