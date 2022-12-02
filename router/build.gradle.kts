@@ -3,6 +3,8 @@ import com.archrouter.plugin.pluginLocal.Dep
 plugins {
     id("com.android.library")
     kotlin("android")
+    `maven-publish`
+    signing
     id("router-publish")
 }
 
