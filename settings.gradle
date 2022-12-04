@@ -13,10 +13,10 @@ pluginManagement {
     }
 }*/
 rootProject.name = "ArchRouter"
-include ':plugin:pluginRouter'
-include ':plugin:pluginSwitch'
 //include ':plugin:pluginLocal'
 includeBuild('./plugin/pluginLocal')
+include ':plugin:pluginRouter'
+include ':plugin:pluginSwitch'
 
 include ':app'
 include ':demoA'
