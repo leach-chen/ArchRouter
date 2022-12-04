@@ -22,6 +22,7 @@ buildscript {
     }
 }
 
+//本地打包注释
 subprojects {
     group = Dep.RouterGroup.group
 }

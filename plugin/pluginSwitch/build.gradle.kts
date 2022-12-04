@@ -4,7 +4,7 @@ plugins {
     `java-gradle-plugin`
     `maven-publish`
     signing
-    id("router-publish")
+    id("router-publish") //本地打包注释
 }
 
 dependencies {
@@ -16,14 +16,14 @@ dependencies {
     implementation("org.javassist:javassist:3.27.0-GA")
 }
 
-version = Dep.RouterVer.pluginSwitchVer
+version = Dep.RouterVer.pluginSwitchVer  //本地打包注释
 
 repositories {
     mavenCentral()
 }
 
 /*
-//本地调试使用
+//本地打包放开
 publishing {
     repositories {
         maven {
