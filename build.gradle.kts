@@ -1,6 +1,11 @@
 import com.archrouter.plugin.pluginLocal.Dep
 buildscript {
     repositories {
+        maven { setUrl("https://maven.aliyun.com/repository/public/") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven{ setUrl("https://maven.aliyun.com/nexus/content/groups/public/")}
+
         google()
         maven {
             //本地maven仓库地址
@@ -31,6 +36,11 @@ tasks.register("clean", Delete::class) {
 
 allprojects {
     repositories {
+        maven { setUrl("https://maven.aliyun.com/repository/public/") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven{ setUrl("https://maven.aliyun.com/nexus/content/groups/public/")}
+
         google()
         mavenCentral()
         maven {

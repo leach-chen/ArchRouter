@@ -9,6 +9,11 @@ plugins {
 
 buildscript {
     repositories {
+        maven { setUrl("https://maven.aliyun.com/repository/public/") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+        maven{ setUrl("https://maven.aliyun.com/nexus/content/groups/public/")}
+
         mavenCentral()
         google()
         mavenLocal()
