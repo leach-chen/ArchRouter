@@ -50,6 +50,27 @@ allprojects {
         }
 //        jcenter() // Warning: this repository is going to shut down soon
     }
+    /*tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet') //忽略javadoc错误
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+            links "http://docs.oracle.com/javase/7/docs/api"
+        }
+    }*/
+
+    tasks.register("javadoc",Javadoc::class.java){
+        options.apply {
+            encoding("UTF-8")
+            charset("UTF-8")
+            isFailOnError = false
+            (this as StandardJavadocDocletOptions).apply {
+                addStringOption("Xdoclint:none")
+                //links?.add("https://developer.android.google.cn/reference/")
+                //links?.add("http://docs.oracle.com/javase/8/docs/api/")
+            }
+        }
+    }
 }
 
 /*
