@@ -16,7 +16,8 @@ done
 if [[ $isRun == false ]]
 then
   echo "配置错误，请在upload.properties文件末尾配置isPublish=true或者isPublish=false"
-elif [[ "publish" == "$1" ]]
+#elif [[ "publish" == "$1" ]]
+elif [[ $isRun == true ]]
 then
     buildCmd="./gradlew :apt-arch:arch:clean :apt-arch:arch:build :apt-arch:arch:publish"
     $buildCmd
