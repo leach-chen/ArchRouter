@@ -81,6 +81,12 @@ class PublishPlugin : Plugin<Project> {
                             artifactId = project.name
                             version = project.version as String
 
+                            if(isPublish.equals("true") && (project.version as String).contains("-")){
+                                version = (project.version as String).split("-")[0]
+                            }else{
+                                version = project.version as String
+                            }
+                            
                             pom {
                                 name.set("${project.group}:${project.name}")
                                 url.set("https://git")
