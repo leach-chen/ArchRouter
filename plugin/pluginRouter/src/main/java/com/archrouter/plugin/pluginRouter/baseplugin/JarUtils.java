@@ -1,8 +1,9 @@
 package com.archrouter.plugin.pluginRouter.baseplugin;
 
 
-import org.gradle.internal.impldep.com.amazonaws.util.IOUtils;
-import org.gradle.internal.impldep.org.apache.commons.codec.digest.DigestUtils;
+
+import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.compress.utils.IOUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;
